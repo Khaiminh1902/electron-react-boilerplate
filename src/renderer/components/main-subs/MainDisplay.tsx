@@ -5,15 +5,13 @@ import SubSidebar from '../server-sub/SubSidebar'
 
 const MainDisplay = React.memo((props: any) => {
   return (
-    <MDBCol className='main-display bg-warning p-0'>
-        <MDBContainer fluid className='p-0'>
-            <MDBRow className='p-0 m-0'>
+    <MDBCol className='main-display bg-warning p-0 h-100'>
+        <MDBContainer fluid className='p-0 h-100'>
+            <MDBRow className='p-0 m-0 h-100'>
                 <SubSidebar />
                 <SubDisplay />
-                <div className='channel-btn bg-info'>hello</div>
             </MDBRow>
         </MDBContainer>
-        <div className='channel-btn bg-info'>hello</div>
     </MDBCol>
   )
 })

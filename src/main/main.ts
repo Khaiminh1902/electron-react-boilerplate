@@ -79,8 +79,6 @@ const createWindow = async () => {
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
-    frame: false,
-    focusable: true,
   });
 
   mainWindow.setWindowButtonVisibility(true)

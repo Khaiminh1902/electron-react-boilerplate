@@ -6,7 +6,7 @@ import Icons from '../../shared/icons'
 const MainSidebar = React.memo((props: any) => {
   return (
     <MDBCol md={3} className='main-sidebar flex-wrap d-block p-0'>
-        <div className="w-100" style={{height: 40, flexShrink: 0}}></div>
+        <div className="w-100" style={{height: 20, flexShrink: 0}}></div>
         <ServerBtn 
             title='Test Server' 
             icon={<Icons.DiscordLogo />}

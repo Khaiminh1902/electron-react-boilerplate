@@ -6,11 +6,10 @@ import { Outlet } from 'react-router-dom'
 
 const MainComponent = React.memo((props: any) => {
     return (
-        <MDBContainer fluid className='main-component bg-success p-0'>
+        <MDBContainer fluid className='main-component p-0'>
             <MDBRow className='w-100 h-100 m-0'>
                 <MainSidebar />
-                <MainDisplay />
-                <div className='channel-btn bg-info'>hello</div>
+                <Outlet />
             </MDBRow>
         </MDBContainer>
     )

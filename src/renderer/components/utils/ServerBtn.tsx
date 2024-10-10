@@ -1,15 +1,14 @@
 import React from "react";
 import { IServerBtn } from "../../shared/types";
 import { Link } from "react-router-dom";
-import '../../App.css'
 
-const ServerBtn = React.memo(({icon, img, title, url, onClick}: IServerBtn) => {
+const ServerBtn = React.memo(({icon, img, title, url}: IServerBtn) => {
     return (
-        <div className="channel-btn mb-2" >
+        <Link className="channel-btn mb-2" to={url} >
             {
                 icon || <img src={img} alt="" />
             }
-        </div>
+        </Link>
     )
 })
 
